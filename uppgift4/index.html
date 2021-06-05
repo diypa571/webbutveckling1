@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+ 	 <title>Webbutveckling 1 | START</title>
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="robots" content="index, follow"/>
+	  <meta name="description" content="Webbutveckling1">
+	  <meta name="resource-type" content="document"/>
+	  <meta name="author" content="﻿diypa571"/>
+	  <meta name="copyright" content="Webbutveckling1"/>
+ 
+	 <style>
+	 	/*<link href="css/style.css" rel="stylesheet">
+    	<link href="css/ftn.css" rel="stylesheet" -->
+		 För uppgift 4 kommer jag att används CSS3 direkt i HTML-documentet. 
+		 Detta för att man ska visa att man kan använda använda CSS3.
+		 */ 
+
+		 /*
+		Följande är för att det ska får vara noll margin!
+		Jag vill inte ha något Overlfow visat i x-led.
+		 */ 
+
+
+		 body, html {
+		margin: 0;
+		overflow-x: hidden; 
+
+		}
+ 
+		/*
+		Följande till länkar!
+		Vanlig länk, aktiv,besökt och mus över länken!
+		 */ 
+		a:link {
+		  color: #FC3;
+		  font-family: Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+		  text-decoration:none;
+		}
+	 
+	 	a:active {
+		  color: #FC3;
+		  font-family: Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+		  text-decoration:none;
+		}
+
+		a:visited {
+		    color: #FC3;
+		    font-family: Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+		    text-decoration:none;
+		}
+	 
+		a:hover {
+		    color: #FC3;
+		    font-family: Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+		    text-decoration:none;
+		}
+
+		 /*
+		Här får rubrikerna typpsnitt Arial och dem är centrerade
+		 */ 
+
+		h1,h2,h4,h5,h6 {
+		font-family: 'Arial', sans-serif;  text-align: center; 
+		text-decoration:none;
+		}
+
+		/*
+		h3, den får vara italic, kurisv
+		 */ 
+		h3{
+		font-family: 'Arial', sans-serif;  font-style: italic;  text-align: center; 
+		text-decoration:none;
+		}
+	 
+	 	/*
+		Här finns en klass för att göra bilder responsiva..
+		 */ 
+	 .makemeresponsive {width: 100%;}
+	 img   {max-width: 200px;}
+	 ul {list-style-type:none;}
+ 	</style>
+
+</head>
+<body>
+ 
+
+ 
+  
+
+	  <!--header, en semantisk html-element-->
+	 <header style="background-color:#025193;">
+		  <div style="  text-align: center; color: white">
+			 <div style="height: 10px"> </div>
+			 <h1> Webbutveckling 1  Uppgift 4  </h1>
+		  </div>
+		 
+		  <!--Navigation-->
+		  <div style="background-color: black; text-align: center;">
+		  		<div style="height: 10px"> </div>
+		        <a  href="index.html">  START </a>  <span style="color:yellow; font-size: 20px;"> | </span>
+		        <a  href="css.html">  OM CSS </a>  <span style="color:yellow; font-size: 20px;"> | </span>
+		        <a  href="layout.html">   LAYOUT</a> 
+		        <div style="height: 10px"> </div>
+		  </div> 
+	</header>
+ 
+ 	  
+ 	  <div style="height: 10px"> </div>
+  
+	 <!--Här startar main som är semantisk html5-->
+	 <main style="margin:auto; max-width: 1200px; background-color: #EBEDEF"> 
+		
+		<div style="height: 10px"> </div>
+		 <div style="font-family: 'Arial', sans-serif; font-size: 20px; font-weight: bold; text-align: center; color: black; background-color: white; max-width: 90%; margin:auto;">
+		<h1> Profil </h1>
+		</div>
+		
+
+		<div style="font-family: 'Arial', sans-serif; font-size: 15px; font-weight: bold; text-align: center; color: white">
+		<img src="images/diyarp.jpg" alt="diyar" class="makemeresponsive">
+		</div>
+
+
+		<div style=" text-align: center; color: black; background-color: white; max-width: 90%; margin:auto; padding: 10px;">
+
+				<h2> Informaion </h2>
+			 	<ul>
+					<li> Bor i Linköping 	</li>
+					<li> Läser dataingenjör programmet	</li>
+			 	</ul>
+
+
+			 	<div style="color: black; background-color:grey; max-width: 90%; margin:auto;">
+					<h2> Favorit personer </h2>
+				</div> 
+			 	<ul>
+					<li> Sokrates 	</li>
+					<li> Christopher Hitchens	</li>
+					<li> Richard Dawkins 	</li>
+					<li> Carl Sagan </li>
+			 	</ul>
+
+
+			 		<h3> Mina favorit filmer </h3>
+			 	<ul>
+					<li> Deep Space 9	</li>
+					<li> StarGate Sg1	</li>
+					<li> StarTrek Enterprice	</li>
+					<li> Voyager</li>
+					<li> Farscape</li>
+					<li> Andromeda</li>
+			 	</ul>
+
+		</div>
+	 <div style="height: 10px"> </div>
+	 </main>  
+
+
+ 
+	 <div style="height: 10px"> </div>
+
+	 <!--Här finns footer, som är också en semantisk html5-->
+ 	<footer> 
+		<div style="background-color:#025193; bottom: 0; width: 100%; text-align: center; padding: 10px; color: white">
+		<h5> Av D Parwana </h5>
+		</div>
+	</footer>
+
+
+</body>
+</html>

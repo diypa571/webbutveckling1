@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>	  <!--Nedan finns meta och rubrik och även läken till den externa css filen-->
+  <meta charset="utf-8">
+ 	 <title>Webbutveckling 1 | START</title>   <!-- Rubrik-->
+	  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Använd senaste redneringsmotron, gäller för microsoft-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--  Webbsidan ska öppnas med width,bredd som webbläsaren har-->
+	  <meta name="robots" content="index, follow"/><!--  Kan vara bra för crawler..-->
+	  <meta name="description" content="Webbutveckling1"> <!--  Beskrivning av webbsidan, bra för sökmotorer-->
+	  <meta name="resource-type" content="document"/> <!--  Beskrivning av webbsidan, bra för sökmotorer-->
+	  <meta name="author" content="﻿diypa571"/> <!--  Kan vara bra att ha namn på författare-->
+	  <meta name="copyright" content="Webbutveckling1"/>
+    <!--Den externa css filen-->
+	  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	  <!--header, en semantisk html-element-->
+  <header>
+      <div class="container">  <!--Container har en specifik max-width, viktigt för att få allt organiserat-->
+      <div class="gridbox">
+        <div class="kolbox1 fwhite shadow1">  <h1> MINWEBB   </h1>    </div>
+    <div class="kolbox2 fwhite"> <span class="personal alignright"> <strong> &#9724; Uppgift 5  </strong> <br>  &#9724; Diyar Parwana <br> &#9724; Datorid:da280a  </span> </div>
+      </div>
+      </div>
+   </header>
+
+   <nav>
+      <!--Navigation-->
+      <span class="seperator2"> </span>
+               <div class="container padding10">
+                <span class="seperator2"> </span>
+                <a class="navmenu"  href="index.html">  START </a>  <span class="ftn15 navmenu fwhite"> | </span>
+                <a class="navmenu"  href="css.html">  OM CSS </a>  <span class="ftn15 navmenu fwhite"> | </span>
+                <a class="navmenu"  href="about.html">  ABOUT </a>  <span class="ftn15 navmenu fwhite"> | </span>
+                <a class="navmenu"  href="contact.html">  KONTAKT </a>
+                <span class="seperator2"> </span>
+         </div>
+    </nav>
+
+ 	<div class="seperator2"> </div>
+
+
+	 <!--Här startar main-->
+	 <main>
+    <div class="container">
+      	 <!--Här  startar aside-->
+          <aside class="aligncenter rund">
+                <form action="http://webshare.mah.se/tszagh/response.php" method="post">
+                  <h2>  Nyhetsbrev  </h2>
+                  <input type="text" placeholder="Name" name="name" required class="newsletterinput">
+                   	<span class="seperator2"> </span>
+                  <input type="text" placeholder="Email address" name="mail" required class="newsletterinput">
+                   	<span class="seperator2"> </span>
+                  <input type="submit" value="Skicka">
+                </form>    	 <!--Här används sepator klass-->
+                 	<span class="seperator2"> </span>
+          </aside>
+
+
+
+          <div class="textinfo">
+            	 <!--text innehåll-->
+          <h1 class="alignleft"> Cascading Style Sheets (CSS)  </h1>
+          <hr>
+          <p>
+          CSS (Cascading Style Sheets), det ä ett stilmallspråk, men det uppfattas inte som ett riktigt programmeringsspråk som java.
+          CSS används tillsammans med olika HTMl-elementen. <br>
+          </p>
+
+    <p> Vi använder CSS för att kunna styra olika HTML-element och vi kan skapa snygga repsonsiva webbsidor med den.
+          <br>Det finns två metoder för att ha CSS kod, vi kan skriva (inline) CSS, att skriva koden direkt i html-documenten
+           för de olika HTML-element  eller vi kan också
+            använd CSS stilmallar, alltså att CSS som externa filer. <br>
+            Så här ser ut när vi skriver CSS som inline. <br><br>
+          <strong>Exempel: </strong> <br>
+          <strong>&lt;h1 style="background-color:green;"&gt; HELLO WORLD  &lt;/h1&gt;</strong><br>
+          Då får elementet<strong> &lt;h1&gt; </strong> en grön backgrundsfärg. <br>
+           Själv tycker jag att man skan använda CSS filer som bara externa filer.
+            Då inkluderas den externa CSS filen med <strong>link.</strong>
+          <br>Följande exempel.
+          <strong>&lt;link href="css/style.css" rel="stylesheet"&gt;</strong>
+          <br>Relevant att ha länken mellan  <strong>&lt;head&gt;</strong> och  <strong>&lt;/head&gt;</strong>  <br>
+            Det finns många fördelar med att göra de, nedan kommer jag att skriva några. <br>
+    </p>
+
+          <h3>  Följande fördelar med att använda CSS som externa filer.  </h3>
+          <hr>
+      <p>
+          <strong> 1- Det blir lättar att skriva koden.   </strong> <br>
+          <strong> 2- Enklare att få översikt på alla olika HTML-element. </strong><br>
+          <strong> 3- Att fixa error blir också mycket lättare.
+            Blir det fel på CSS koden, ja, man vet då att CSS koden finns i style.css     </strong> <br>
+
+            <strong> 4- Externa filerna behöver inte vara på samma webserver.   </strong>
+      </p>
+
+		</div>
+
+        <div class="seperator10"> </div>
+	</div>
+	 </main>
+
+
+ 	<div class="seperator2"> </div>
+
+	 <!--Här börjar footer delen...-->
+   <footer>
+ 	<div class="seperator2"> </div>
+ 		<p class="padding10 aligncenter ftn6 fwhite">
+         Av Diyar Parwana <br>
+       This website is free to copy, distribute and modify, no restrictions <br>   Updated : 2021-03-05  </p>
+        <br>
+ 	</footer>
+
+
+</body>
+</html>

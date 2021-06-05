@@ -1,0 +1,122 @@
+<!--
+  @ Diyar Parwana
+  @ Webbutveckling 1 Uppgift 3
+  @ 2021-02-03
+-->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <!-- information för själva webbsidan-->
+  <meta charset="utf-8"><!-- Unicode har support för många språk-->
+  <title>Webbutveckling 1 | HEM</title>
+  <!-- Renderas med senaste renderingsmotorn, edge-->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Webbsidan öppnas med storleken på enheten, bredden på enheten, kan vara mobil eller desktop-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow"/>
+  <meta name="description" content="Webbutveckling1">
+  <meta name="resource-type" content="document"/>
+  <meta name="author" content="﻿diypa571"/>
+  <meta name="copyright" content="Webbutveckling1"/>
+    <link href="css/style.css" rel="stylesheet"><!-- Externa CSS filer-->
+    <link href="css/ftn.css" rel="stylesheet">
+</head>
+<body>
+
+  <!--header/ i den här delen får det finnas navigationen-->
+  <div class="headerbox ftn fblue aligncenter">   <!-- En div box-->
+    <h1> Webbutveckling 1  Uppgift 3 </h1>   <!-- Eh header-->
+    <p>   <a class="ftn fblue ftn14" href="#">  NAVIGATION: MENYHER FÅR FINNAS HÄR</a>   </p> <!-- En paragraf för navigation-->
+  </div>
+  <!--header-->
+
+  <!--Separator, en sperator klass som jag skapat.-->
+  <div class="bgfblack seperator2">   </div>
+  <!--Separator-->
+
+
+<!--mainbox-->
+<div class="mainbox padding10   ftn fblack alignleft">
+
+  <!--Här startar form, den har metoden get, skickar parametrarna via url.-->
+  <form class="ftn ftn15" action="http://webshare.mah.se/tszagh/response.php" method="get">
+
+  <fieldset>
+    <legend class="ftn ftn20"> Skriv dina kontakt uppgifter  </legend>
+        <label>Namn:</label>
+         <!--Använd required för att tvina användaren att skriva data -->
+      <input type="text" id="namn" name="namn" placeholder="Ange namn" required><br>
+        <label>Ålder:</label>
+         <!--data type, number har jag använd för att få användaren bara skriva siffror -->
+      <input type="number" id="alder" name="alder" placeholder="Ange ålder" required>
+  </fieldset>
+
+
+  <fieldset>
+    <legend class="ftn ftn20">Vänligen svara på följande frågor</legend>
+        <label>Hur ofta besöker du Blomstermålabladet?</label><br>
+         <!--Radio kanapparna, dem har samma namn men olika värden och är required -->
+        <input type = "radio" name = "radioknapp"  value = "Varje dag " required /> Varje dag <br>
+        <input type = "radio" name = "radioknapp"  value = "Varannan dag"  /> Varannan dag <br>
+        <input type = "radio" name = "radioknapp"  value = "Varje vecka"  /> Varje vecka <br>
+        <br>
+        <!--Checkboxarna -->
+        <label>Vilka delar av Blomstermålabladet brukar du besöka?</label><br>
+        <input type="checkbox" name="checkbox0" value="Nyheter"> Nyheter <br>
+        <input type="checkbox" name="checkbox1" value="Utrikes"> Utrikes <br>
+        <input type="checkbox" name="checkbox2" value="Inrike"> Inrikes <br>
+        <input type="checkbox" name="checkbox3" value="Sport"> Sport <br>
+        <input type="checkbox" name="checkbox4" value="Skvaller"> Skvaller <br>
+        <input type="checkbox" name="checkbox5" value="Väder"> Väder <br>
+        <input type="checkbox" name="checkbox6" value="Övrigt"> Övrigt <br>
+  </fieldset>
+
+
+  
+
+  <fieldset>
+      <legend class="ftn ftn20">Vin en T-shirt!</legend>
+        <label>Du har möjlighet att vinna en T-shirt om ni fyller i följande information</label><br>
+        <p>
+        <label>Vad tycker du är bäst med Blomstermålabladet?</label><br>
+        <textarea id="bast" name="bast" rows="4" cols="35">
+        </textarea> </p>
+
+        <p>
+        <label>Vad tycker du är sämst med Blomstermålabladet?</label><br>
+        <textarea id="smast" name="samst" rows="4" cols="35">
+        </textarea> </p>
+
+        <!-- Email, den har type=email, emailet måste då vara rätt format.. -->
+        <!-- användare@domän.com -->
+        <br><label>E-post:</label>
+        <input type="email" id="email"  placeholder="Ange Email"> <br>
+        <!-- Storlek, M är selected -->
+        <br><label>Storlek:</label>
+        <select name="storlek" id="storlek">
+           <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M" selected>M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+  </fieldset>
+
+
+  <fieldset>
+        <legend class="ftn ftn20">Skicka/Återställ</legend>
+          <button type="submit" value="Submit" class="ftn15">SKICKA</button>
+          <button type="reset" value="Reset" class="ftn15">ÅTERSTÄLL</button>
+  </fieldset>
+  </form>
+
+
+</div>
+<!--main-->
+
+<!--Footer delen-->
+<div class="footerbox bgfblack fwhite aligncenter"> <br> Av D Parwana <br> </div>
+
+</body>
+</html>

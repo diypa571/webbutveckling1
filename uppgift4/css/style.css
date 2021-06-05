@@ -1,0 +1,52 @@
+/*
+Skapat av Diyar Par.
+Jag skapade följande CSS fil för att kunna enkelt generera ett enkelt responsive.
+Har du frågor om den här filen??
+Skriv till mig.
+diypa571@student.liu.se
+https://github.com/diypa571/ftncolors/blob/main/ftncolors.css
+Det är fritt, alla kan använda den, modifiera den, gör vad du vill med den.
+*/
+
+
+/*
+För uppgift 1, inget avancerat!!!
+Jag delar webbsidan i fyra delar!!!
+1- Header, får finnas längst upp på webbsidan, den får innehålla logo typ, kanske något telefonnr.
+2- Navigations, får innehålla menyer.
+3- Main, Den får innehålla texter, bilder, länkar, här ska man publicera information.
+4- Footer, den får innehålla information, till exempel copyright!!!
+*/
+
+/*  Vi får har margin 0.  */
+body, html {
+margin: 0;
+}
+
+
+.container {max-width:910px; margin: 0px auto;}
+
+.alignright { text-align: right;  }
+.aligncenter { text-align:center;  }
+.alignleft { text-align: left;  }
+
+.padding5{ padding: 5px;}
+.padding10{ padding: 10px;}
+
+.headerbox {margin: 0px auto;}
+.navigationbox { height: auto;}
+
+.mainbox {  height: auto; }
+
+.footerbox { margin-bottom: 2px; height: auto; }
+
+
+.seperator1 {height:5px }
+.seperator2 {height:10px }
+
+
+.table,th,td {
+  border: 1px solid black; }
+
+.artistimage {  max-width:80px;}
+.responsive  {width: 100%;}

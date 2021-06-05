@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+ 	 <title>Webbutveckling 1 | CSS</title>
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="robots" content="index, follow"/>
+	  <meta name="description" content="Webbutveckling1">
+	  <meta name="resource-type" content="document"/>
+	  <meta name="author" content="﻿diypa571"/>
+	  <meta name="copyright" content="Webbutveckling1"/>
+
+	 <style>
+	 	/*<link href="css/style.css" rel="stylesheet">
+    	<link href="css/ftn.css" rel="stylesheet" -->
+		 För uppgift 4 kommer jag att används CSS3 direkt i HTML-documentet.
+		 Detta för att man ska visa att man kan använda använda CSS3.
+		 */
+		 body, html {
+		margin: 0;
+		overflow-x: hidden;
+
+		}
+
+		/*
+		Följande till länkar!
+		Vanlig länk, aktiv,besökt och mus över länken!
+		 */
+		a:link {
+		  color: #FC3;
+		  font-family: Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+		  text-decoration:none;
+		}
+
+	 	a:active {
+		  color: #FC3;
+		  font-family: Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+		  text-decoration:none;
+		}
+
+		a:visited {
+		    color: #FC3;
+		    font-family: Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+		    text-decoration:none;
+		}
+
+		a:hover {
+		    color: #FC3;
+		    font-family: Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+		    text-decoration:none;
+		}
+
+		h1,h2,h4,h5,h6 {
+		font-family: 'Arial', sans-serif;  text-align: center;
+		text-decoration:none;
+		}
+
+		h3{
+		font-family: 'Arial', sans-serif;  font-style: italic;  text-align: center;
+		text-decoration:none;
+		}
+
+	 .makemeresponsive {width: 100%;}
+	 img   {max-width: 200px;}
+	 ul {list-style-type:none;}
+ 	</style>
+
+</head>
+<body>
+
+
+
+	  <!--header, en semantisk html-element-->
+	 <header style="background-color:#025193;">
+		  <div style="  text-align: center; color: white">
+			 <div style="height: 10px"> </div>
+			 <h1> Webbutveckling 1  Uppgift 4  </h1>
+		  </div>
+
+		  <!--Navigation-->
+		  <div style="background-color: black; text-align: center;">
+		  		<div style="height: 10px"> </div>
+		        <a  href="index.html">  START </a>  <span style="color:yellow; font-size: 20px;"> | </span>
+		        <a  href="css.html">  OM CSS </a>  <span style="color:yellow; font-size: 20px;"> | </span>
+		        <a  href="layout.html">   LAYOUT</a>
+		        <div style="height: 10px"> </div>
+		  </div>
+	</header>
+
+ 	<div style="height: 10px"> </div>
+
+	 <!--Här startar main som är semantisk html5-->
+	 <main style="margin:auto; max-width: 1200px; background-color: #EBEDEF">
+
+		<div style="height: 10px"> </div>
+		 <div style="font-family: 'Arial', sans-serif; font-size: 20px; font-weight: bold; text-align: center; color: black; background-color: white; max-width: 95%; margin:auto;">
+		<h1> FAQ </h1>
+		</div>
+
+
+		<div style=" text-align: center; color: black; background-color: white; max-width: 90%; margin:auto; padding: 10px;">
+ 			 	<div style="color: white; background-color:grey; max-width: 95%; margin:auto;">
+					<h2> Vad är CSS? </h2>
+				</div>
+
+			  	<div style="color: black;  max-width: 90%; margin:auto; padding: 10px; text-align: left;  font-size: 16px;">
+				CSS (Cascading Style Sheets), det ä ett stilmallspråk,
+				men det uppfattas inte som ett riktigt programmeringsspråk som java.
+				 CSS används tillsammans med olika HTMl-elementen och för att
+				 kunna styra till exempel hur  olika elementen ska få se ut.
+				</div>
+
+
+			<div style="color: white; background-color:grey; max-width: 95%; margin:auto;">
+				<h2> Varför finns CSS?</h2>
+				</div>
+			  <div style="color: black;  max-width: 90%; margin:auto; padding: 10px; text-align: left;  font-size: 16px;">
+				CSS finns i webbläsarens renderingsmotorer (rendering engines).
+				Olika webbläsaren kan ha support för olika versioner av CSS.
+				Jag kommer ihåg att gamla versioner av internet explorer hade inte support för senaste versionen av CSS.
+				 Det var ett problem för Microsoft, folk började använda webbläsarna Firefox och Chrome istället.
+				Webbläsaren Edge har support för CSS3 in renderingsmotorn, vilket är bra.
+
+				Renderingsmotorer är relevanta,  för att alla HTML-element kommer att tolkas,
+				representeras som object.  Alltså Document Object Model,
+				 förkortas som DOM. För oss programmerat javascript, att ha olika HTML-element representerat som objekt,
+				 är bra viktigt för att då javascript kommer att kunna hantera HTML-elementen.
+
+				För CSS, tanken är ungefär samma, CSS Object Model, förkortas som CSSOM.
+
+
+				</div>
+
+
+
+				 <div style="color: white; background-color:grey; max-width: 95%; margin:auto;">
+				<h2> Hur använder vi oss av CSS?? </h2>
+				</div>
+			  <div style="color: black;  max-width: 90%; margin:auto; padding: 10px; text-align: left;  font-size: 16px;">
+				Vi kan använda CSS.
+				CSS kan används direkt eller som externa CSS länkar i html filer.
+				Normalt ska CSS koden finnas mellan  &lt;head&gt;  Här ska CSS skrivas.  &lt;/head&gt;
+
+
+				Vi kan skapa CSS regler som kan bestå av en klass eller ett id,
+				 med två st lockiga parenteser som får innehålla CSS egenskaper och värden.
+				 .webbutveckling1 {}, Vi kan skriva olika CSS klasser.
+				#webbutveckling1{} , är skapa en id=”webbutveckling1”,
+				skrivas med en fyrkantstagg (hastag) och det är ett id som kommer att skapas i CSS koden.
+
+				När vi använder oss av HTML-elementen direkt, det här metoden kallas för CSS selektorer.
+				Exempel.
+				p {background-color:green}
+				Här väljer vi p, alla p elementen i html-dokumentet får ha en grön bakgrundsfärg.
+				Background-color, är en atribut.
+				Green, är ett värde till background-color.
+				</div>
+
+
+				<div style="color: white; background-color:grey; max-width: 95%; margin:auto;">
+				<h2> Vilka versioner finns det? </h2>
+				</div>
+			  <div style="color: black;  max-width: 90%; margin:auto; padding: 10px; text-align: left;  font-size: 16px;">
+				CSS1, har funnit sedan 1996, man kunde använda den för att kunna till exempel ha olika färger på texter.
+				CSS2, med den här versionen blev det möjlig att ha olika positioner för olika element.
+				CSS3, den utvecklades år 1999 och med den här versionen blev det möjlig att ha olika positioner för olika element.
+				</div>
+
+
+
+				<div style="color: white; background-color:grey; max-width: 95%; margin:auto;">
+				<h2> Varför finns det olika versioner? (Varför är det inte bara en?) </h2>
+				</div>
+			  <div style="color: black;  max-width: 90%; margin:auto; padding: 10px; text-align: left;  font-size: 16px;">
+				Varje ny version innehåller nya funktioner samt existerande funktioner kan ha blivit bättre.
+				 Tekniken går framåt, olika mobila enheter produceras, webbsidorna får anpassa sig efter olika enheterna.
+				</div>
+
+				<div style="color: white; background-color:grey; max-width: 95%; margin:auto;">
+				<h2> Varför är det viktigt att veta vilken version som en viss CSS-egenskap tillhör? (Kan detta påverka webbplatsen?)</h2>
+				</div>
+			  <div style="color: black;  max-width: 90%; margin:auto; padding: 10px; text-align: left;  font-size: 16px;">
+				Det kan vara bra att veta, moderna webbläsaren har support för CSS3.
+				Gamla webbläsaren till exempel,internet explorer kommer inte att ha support för Grid.
+				Webbsidor som innehåller CSS grid funktioner kommer att se konstiga.
+				 Till exempel, med version CSS3, vi kan ha runda hör på en div box, funktionen existerar inte i äldre versionen.
+				Den nya versionen innehåller grid vilket bra för att kunna skapa olika responsiva stilmallar som anpassar sig efter olika enheters storlek på bredden.
+				Man brukar rekommendera att använda CSS3, för att som skrev ovanför, moderna enheter har support för CSS3.
+				</div>
+
+
+
+
+		</div>
+	 <div style="height: 10px"> </div>
+	 </main>
+
+
+
+
+
+	 <div style="height: 10px"> </div>
+
+	 <!--Här finns footer, som är också en semantisk html5-->
+ 	<footer>
+		<div style="background-color:#025193; bottom: 0; width: 100%; text-align: center; padding: 10px; color: white">
+		<h5> Av D Parwana </h5>
+		</div>
+	</footer>
+
+
+</body>
+</html>

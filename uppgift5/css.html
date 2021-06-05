@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+ 	 <title>Webbutveckling 1 | START</title>
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="robots" content="index, follow"/>
+	  <meta name="description" content="Webbutveckling1">
+	  <meta name="resource-type" content="document"/>
+	  <meta name="author" content="﻿diypa571"/>
+	  <meta name="copyright" content="Webbutveckling1"/>
+	  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	  <!--header, en semantisk html-element-->
+
+  <header>
+      <div class="container">
+      <div class="gridbox">
+      <div class="kolbox1 fwhite shadow1">  <h1> MINWEBB   </h1>    </div>
+      <div class="kolbox2 fwhite"> <span class="personal alignright"> <strong> &#9724; Uppgift 5  </strong> <br>  &#9724; Diyar Parwana <br> &#9724; Datorid:da280a  </span> </div>
+      </div>
+      </div>
+   </header>
+
+
+   <nav>
+      <!--Navigation-->	<span class="seperator2"> </span>
+               <div class="container padding10">
+                <span class="seperator2"> </span>
+                <a class="navmenu"  href="index.html">  START </a>  <span class="ftn15 navmenu fwhite"> | </span>
+                <a class="navmenu"  href="css.html">  OM CSS </a>  <span class="ftn15 navmenu fwhite"> | </span>
+                <a class="navmenu"  href="about.html">  ABOUT </a>  <span class="ftn15 navmenu fwhite"> | </span>
+                <a class="navmenu"  href="contact.html">  KONTAKT </a>
+                <span class="seperator2"> </span>
+         </div>
+    </nav>
+
+
+ 	<div class="seperator2"> </div>
+
+
+	 <!--Här startar main som är semantisk html5-->
+
+	 <main>
+    <div class="container">
+          <aside class="aligncenter rund">
+                <form action="http://webshare.mah.se/tszagh/response.php" method="post">
+                  <h2>  Nyhetsbrev  </h2>
+                  <input type="text" placeholder="Name" name="name" required class="newsletterinput">
+                   	<span class="seperator2"> </span>
+                  <input type="text" placeholder="Email address" name="mail" required class="newsletterinput">
+                   	<span class="seperator2"> </span>
+                  <input type="submit" value="Skicka">
+                </form>
+                 	<span class="seperator2"> </span>
+          </aside>
+
+
+
+          <div class="textinfo">
+
+            				<h1> KORT OM CSS  </h1> <hr>
+            				CSS (Cascading Style Sheets), det ä ett stilmallspråk,
+            				men det uppfattas inte som ett riktigt programmeringsspråk som java.
+            				 CSS används tillsammans med olika HTMl-elementen och för att
+            				 kunna styra till exempel hur  olika elementen ska få se ut.
+
+            				<h2> Varför finns CSS?</h2><hr>
+
+            				CSS finns i webbläsarens renderingsmotorer (rendering engines).
+            				Olika webbläsaren kan ha support för olika versioner av CSS.
+            				Jag kommer ihåg att gamla versioner av internet explorer hade inte support för senaste versionen av CSS.
+            				 Det var ett problem för Microsoft, folk började använda webbläsarna Firefox och Chrome istället.
+            				Webbläsaren Edge har support för CSS3 in renderingsmotorn, vilket är bra.
+
+            				Renderingsmotorer är relevanta,  för att alla HTML-element kommer att tolkas,
+            				representeras som object.  Alltså Document Object Model,
+            				 förkortas som DOM. För oss programmerat javascript, att ha olika HTML-element representerat som objekt,
+            				 är bra viktigt för att då javascript kommer att kunna hantera HTML-elementen.
+
+            				För CSS, tanken är ungefär samma, CSS Object Model, förkortas som CSSOM.
+
+
+            				</div>
+
+
+
+            				<h2> Hur använder vi oss av CSS?? </h2><hr>
+
+            				Vi kan använda CSS.
+            				CSS kan används direkt eller som externa CSS länkar i html filer.
+            				Normalt ska CSS koden finnas mellan  &lt;head&gt;  Här ska CSS skrivas.  &lt;/head&gt;
+
+
+            				Vi kan skapa CSS regler som kan bestå av en klass eller ett id,
+            				 med två st lockiga parenteser som får innehålla CSS egenskaper och värden.
+            				 .webbutveckling1 {}, Vi kan skriva olika CSS klasser.
+            				#webbutveckling1{} , är skapa en id=”webbutveckling1”,
+            				skrivas med en fyrkantstagg (hastag) och det är ett id som kommer att skapas i CSS koden.
+
+            				När vi använder oss av HTML-elementen direkt, det här metoden kallas för CSS selektorer.
+            				Exempel.
+            				p {background-color:green}
+            				Här väljer vi p, alla p elementen i html-dokumentet får ha en grön bakgrundsfärg.
+            				Background-color, är en atribut.
+            				Green, är ett värde till background-color.
+
+            				<h2> Vilka versioner finns det? </h2><hr>
+
+            				CSS1, har funnit sedan 1996, man kunde använda den för att kunna till exempel ha olika färger på texter.
+            				CSS2, med den här versionen blev det möjlig att ha olika positioner för olika element.
+            				CSS3, den utvecklades år 1999 och med den här versionen blev det möjlig att ha olika positioner för olika element.
+
+
+
+
+            				<h2> Varför finns det olika versioner? (Varför är det inte bara en?) </h2><hr>
+
+            				Varje ny version innehåller nya funktioner samt existerande funktioner kan ha blivit bättre.
+            				 Tekniken går framåt, olika mobila enheter produceras, webbsidorna får anpassa sig efter olika enheterna.
+
+
+            				<h2> Varför är det viktigt att veta vilken version som en viss CSS-egenskap tillhör? (Kan detta påverka webbplatsen?)</h2>
+
+
+            				Det kan vara bra att veta, moderna webbläsaren har support för CSS3.
+            				Gamla webbläsaren till exempel,internet explorer kommer inte att ha support för Grid.
+            				Webbsidor som innehåller CSS grid funktioner kommer att se konstiga.
+            				 Till exempel, med version CSS3, vi kan ha runda hör på en div box, funktionen existerar inte i äldre versionen.
+            				Den nya versionen innehåller grid vilket bra för att kunna skapa olika responsiva stilmallar som anpassar sig efter olika enheters storlek på bredden.
+            				Man brukar rekommendera att använda CSS3, för att som skrev ovanför, moderna enheter har support för CSS3.
+
+
+
+
+
+
+		</div>
+
+        <div class="seperator10"> </div>
+	</div>
+	 </main>
+
+
+ 	<div class="seperator2"> </div>
+
+  <footer>
+	<div class="seperator2"> </div>
+		<p class="padding10 aligncenter ftn6 fwhite">
+        Av Diyar Parwana <br>
+      This website is free to copy, distribute and modify, no restrictions <br>   Updated : 2021-03-05  </p>
+       <br>
+	</footer>
+
+</body>
+</html>
